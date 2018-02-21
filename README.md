@@ -16,7 +16,15 @@ On Webpack 4 they has defaults values:
 ```json
 {
     "entry": "./src",
-    "output": "./dist",
-    "mode": "production"
+    "output": "./dist"
 }
+```
+
+### Mode
+
+* `production`: enables optimizations out of the box (scope hoisting, tree shaking, minification, etc.)
+* `development`: this mode is optimized for speed (un-minified bundle)
+
+```bash
+webpack --mode production
 ```

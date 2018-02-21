@@ -1,2 +1,3 @@
 # webpack-demo
-webpack 4 demo
+
+This is a [webpack](https://webpack.js.org/) 4 demo project.

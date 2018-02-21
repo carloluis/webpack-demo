@@ -24,5 +24,8 @@
   "devDependencies": {
     "webpack": "^4.0.0-beta.2",
     "webpack-cli": "^2.0.6"
+  },
+  "dependencies": {
+    "reformat-number": "^0.0.1"
   }
 }

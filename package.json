@@ -1,10 +1,9 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "webpack demo app",
+  "description": "≥ webpack 4 demo app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },

@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/carloluis/webpack-demo#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^4.4.1",
+    "html-webpack-plugin": "webpack-contrib/html-webpack-plugin",
+    "html-webpack-template": "^6.1.0",
     "webpack": "^4.0.0-beta.2",
     "webpack-cli": "^2.0.6"
   },

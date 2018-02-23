@@ -1,15 +1,35 @@
 # Webpack-Demo &middot; [![GitHub license](https://img.shields.io/github/license/carloluis/webpack-demo.svg)](https://github.com/carloluis/webpack-demo/blob/master/LICENSE)
 
-This is a [webpack](https://webpack.js.org/) 4 demo project.
+Demo project to start using and experiment with [Webpack](https://webpack.js.org/) 4.
 
-## Install webpack
+## Start
+
+Restore dependencies and start development server:
+
+```bash
+yarn && yarn dev:server
+```
+
+### Features
+
+* _entry_ / _output_ custom config.
+* split chunks (`app` | `vendors`)
+* html index creation
+* assets copy
+* dev server
+
+----
+
+## Webpack
+
+### Install webpack
 
 ```bash
 # add webpack 4 (currently on 4.0.0-beta.2)
 yarn add webpack@next webpack-cli --dev
 ```
 
-## Zero Configuration
+### Zero Configuration
 
 No need for explicit specify `entry` and `output` entries on webpack config.
 On Webpack 4 they has defaults values:
@@ -21,7 +41,7 @@ On Webpack 4 they has defaults values:
 }
 ```
 
-### Mode
+#### Mode
 
 Webpack mode reduce the required configuration for a useful build:
 
@@ -32,7 +52,7 @@ Webpack mode reduce the required configuration for a useful build:
 webpack --mode production
 ```
 
-## Webpack Changes
+### Webpack Changes
 
 Full list of changes on [webpack changelog](https://github.com/webpack/webpack/releases).
 
@@ -42,7 +62,7 @@ Full list of changes on [webpack changelog](https://github.com/webpack/webpack/r
 
 More changes on [v4.0.0-beta.0](https://github.com/webpack/webpack/releases/tag/v4.0.0-beta.0)
 
-## Articles
+### Articles
 
 - [:rocket: webpack 4 beta — try it today! :rocket:](https://medium.com/webpack/webpack-4-beta-try-it-today-6b1d27d7d7e2)
 - [webpack 4: mode and optimization](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)

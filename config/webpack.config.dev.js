@@ -12,7 +12,7 @@ const PATHS = {
 
 module.exports = {
     context: __dirname,
-    mode: "development",
+    mode: 'development',
     entry: {
         app: [PATHS.src],
         vendors: Object.keys(package.dependencies)

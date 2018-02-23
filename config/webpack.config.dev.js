@@ -54,8 +54,7 @@ module.exports = {
             },
             mobile: true
         }),
-        // next was needed for scope hoisting...
-        // new webpack.optimize.ModuleConcatenationPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
         new CopyWebpackPlugin([
             {
@@ -64,6 +63,22 @@ module.exports = {
             }
         ])
     ],
+    devServer: {
+        contentBase: PATHS.dist,
+        compress: true,
+        headers: {
+            'X-Content-Type-Options': 'nosniff',
+            'X-Frame-Options': 'DENY'
+        },
+        open: true,
+        overlay: {
+            warnings: true,
+            errors: true
+        },
+        port: 8080,
+        publicPath: 'http://localhost:8080/',
+        hot: true
+    },
     stats: {
         children: false
     }

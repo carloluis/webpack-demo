@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "stats": "webpack --profile --json > stats.json"
+    "stats": "webpack --profile --json > stats.json",
+    "dev:server": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
     "html-webpack-plugin": "webpack-contrib/html-webpack-plugin",
     "html-webpack-template": "^6.1.0",
     "webpack": "^4.0.0-beta.2",
-    "webpack-cli": "^2.0.6"
+    "webpack-cli": "^2.0.6",
+    "webpack-dev-server": "^3.0.0-beta.2"
   },
   "dependencies": {
     "reformat-number": "^0.0.1"

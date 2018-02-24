@@ -32,6 +32,6 @@
     "webpack-dev-server": "^3.0.0-beta.2"
   },
   "dependencies": {
-    "reformat-number": "^0.0.1"
+    "reformat-number": "1.0.0"
   }
 }

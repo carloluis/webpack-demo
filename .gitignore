@@ -1,3 +1,10 @@
+#dependencies
 node_modules
+
+# output
 dist/
 stats.json
+
+# log files
+yarn-error.log
+npm-debug.log

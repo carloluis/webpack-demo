@@ -1,6 +1,9 @@
-# Webpack-Demo &middot; [![GitHub license](https://img.shields.io/github/license/carloluis/webpack-demo.svg)](https://github.com/carloluis/webpack-demo/blob/master/LICENSE)
+# Webpack 4 Demo &middot; Legato
 
-> Demo project to start using and experiment with [Webpack 4](https://webpack.js.org/)
+> Demo project to start using and experiment with [Webpack 4](https://webpack.js.org/) :notes:
+
+[![GitHub license](https://img.shields.io/github/license/carloluis/webpack-demo.svg)](https://github.com/carloluis/webpack-demo/blob/master/LICENSE)
+[![David](https://img.shields.io/david/dev/carloluis/webpack-demo.svg)](https://david-dm.org/carloluis/webpack-demo?type=dev)
 
 ## Start
 
@@ -77,3 +80,4 @@ Full list of changes on [webpack changelog](https://github.com/webpack/webpack/r
 - [:rocket: webpack 4 beta — try it today! :rocket:](https://medium.com/webpack/webpack-4-beta-try-it-today-6b1d27d7d7e2)
 - [webpack 4: mode and optimization](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)
 - [webpack 4: import() and CommonJs](https://medium.com/webpack/webpack-4-import-and-commonjs-d619d626b655)
+- [webpack 4: released today!! :sparkles:](https://medium.com/webpack/webpack-4-released-today-6cdb994702d4)

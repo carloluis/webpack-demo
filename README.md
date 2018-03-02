@@ -10,7 +10,7 @@
 Restore dependencies and start development server:
 
 ```bash
-yarn && yarn dev:server
+yarn && yarn dev
 ```
 
 ### Features

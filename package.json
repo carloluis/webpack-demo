@@ -1,13 +1,13 @@
 {
   "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "≥ webpack 4 demo app",
+  "description": "webpack 4 (legato) demo app",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "build:dev": "webpack --mode development",
     "build": "webpack --mode production",
     "stats": "webpack --profile --json > stats.json",
-    "dev:server": "webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",

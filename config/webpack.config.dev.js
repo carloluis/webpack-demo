@@ -38,6 +38,26 @@ module.exports = {
         extensions: ['.js', '.jsm']
     },
     devtool: 'eval',
+    module: {
+        rules: [
+            {
+                test: /.css$/,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            camelCase: 'dashes',
+                            localIdentName: '[path][name]__[local]'
+                        }
+                    }
+                ]
+            }
+        ]
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: '../node_modules/html-webpack-template/index.ejs',

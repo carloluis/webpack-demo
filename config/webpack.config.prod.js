@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
@@ -34,6 +35,26 @@ module.exports = {
             }
         }
     },
+    module: {
+        rules: [
+            {
+                test: /.css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                modules: true,
+                                camelCase: 'dashes',
+                                minimize: true
+                            }
+                        }
+                    ]
+                })
+            }
+        ]
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: '../node_modules/html-webpack-template/index.ejs',
@@ -55,6 +76,9 @@ module.exports = {
                 from: path.join(PATHS.src, 'favicon.ico'),
                 to: path.join(PATHS.dist, 'favicon.ico')
             }
-        ])
+        ]),
+        new ExtractTextPlugin({
+            filename: '[name].[chunkhash].css'
+        })
     ]
 };

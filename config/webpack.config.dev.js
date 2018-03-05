@@ -41,7 +41,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /.css$/,
+                test: /.scss$/,
                 use: [
                     {
                         loader: 'style-loader'
@@ -53,6 +53,9 @@ module.exports = {
                             camelCase: 'dashes',
                             localIdentName: '[path][name]__[local]'
                         }
+                    },
+                    {
+                        loader: 'sass-loader'
                     }
                 ]
             }

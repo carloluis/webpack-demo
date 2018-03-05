@@ -38,7 +38,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /.css$/,
+                test: /.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
@@ -49,6 +49,9 @@ module.exports = {
                                 camelCase: 'dashes',
                                 minimize: true
                             }
+                        },
+                        {
+                            loader: 'sass-loader'
                         }
                     ]
                 })

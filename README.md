@@ -13,6 +13,8 @@ Restore dependencies and start development server:
 yarn && yarn dev
 ```
 
+Check your browser console at [localhost:8080](http://localhost:8080/)
+
 ### Features
 
 * _entry_ / _output_ custom config.
@@ -81,3 +83,7 @@ Full list of changes on [webpack changelog](https://github.com/webpack/webpack/r
 - [webpack 4: mode and optimization](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)
 - [webpack 4: import() and CommonJs](https://medium.com/webpack/webpack-4-import-and-commonjs-d619d626b655)
 - [webpack 4: released today!! :sparkles:](https://medium.com/webpack/webpack-4-released-today-6cdb994702d4)
+
+## License
+
+MIT © [Carloluis](https://github.com/carloluis)

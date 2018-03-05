@@ -4,6 +4,8 @@
   "description": "webpack 4 (legato) demo app",
   "main": "index.js",
   "scripts": {
+    "default:dev": "webpack --mode development",
+    "default:prod": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build": "webpack --mode production",
     "stats": "webpack --profile --json > stats.json",

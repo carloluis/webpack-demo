@@ -75,7 +75,8 @@ module.exports = {
                 useShortDoctype: true,
                 html5: true
             },
-            mobile: true
+            mobile: true,
+            scripts: ['/static.js']
         }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
@@ -83,6 +84,10 @@ module.exports = {
             {
                 from: path.join(PATHS.src, 'favicon.ico'),
                 to: path.join(PATHS.dist, 'favicon.ico')
+            },
+            {
+                from: path.join(PATHS.src, 'demo/static.js'),
+                to: path.join(PATHS.dist, 'static.js')
             }
         ])
     ],

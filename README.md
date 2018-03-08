@@ -45,10 +45,13 @@ yarn add webpack@next webpack-cli --dev
 
 </details>
 
-### Zero Configuration
+### Zero Config (#0CJS)
 
-No need for explicit specify `entry` and `output` entries on webpack config.
-On _Webpack 4_ they has defaults values:
+#### Entry / Output
+
+No need for explicit specify `entry` and `output` properties in the webpack configuration.
+
+In _Webpack 4_ those fields are defaulted to:
 
 ```json
 {
@@ -59,7 +62,7 @@ On _Webpack 4_ they has defaults values:
 
 #### Mode
 
-Webpack `mode` reduce the required configuration for a useful build:
+Webpack `mode` reduce the required configuration for an useful build:
 
 * `development`: this mode provide useful error messages and is optimized for speed (unminified bundle)
 * `production`: enables optimizations out of the box (scope hoisting, tree shaking, minification, etc.)

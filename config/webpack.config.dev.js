@@ -58,6 +58,11 @@ module.exports = {
                         loader: 'sass-loader'
                     }
                 ]
+            },
+            {
+                test: /.jsx?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             }
         ]
     },
@@ -67,6 +72,7 @@ module.exports = {
             title: 'Webpack 4 Demo',
             favicon: '../src/favicon.ico',
             meta: [{ name: 'robots', content: 'noindex,nofollow' }],
+            appMountIds: ['app'],
             inject: false,
             minify: {
                 collapseWhitespace: true,

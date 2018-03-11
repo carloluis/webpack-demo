@@ -71,22 +71,22 @@ Webpack `mode` reduce the required configuration for an useful build:
 webpack --mode production
 ```
 
-### Webpack Changes
+### Changes
 
-Full list of changes on [webpack changelog](https://github.com/webpack/webpack/releases)
-
-- Webpack dropped _Node.js 4_ support. Therefore, more benefits from ES6 features (optimizations from V8).
+- Dropped _Node.js 4_ support. Therefore, more benefits from ES6 features (optimizations from V8).
 - Sets of defaults with **production** and **development** modes.
-- General defaults (zero config file).
-
-[Webpack v4.0.0 changeset](https://github.com/webpack/webpack/releases/tag/v4.0.0) 
+- Changes on plugins (Some actives depending on **mode**. `CommonsChunkPlugin` was removed)
+- Optimizations, performance boost and many more...
+- Read changeset of [Webpack v4.0.0](https://github.com/webpack/webpack/releases/tag/v4.0.0) 
 
 ### Articles
 
 - [:rocket: webpack 4 beta — try it today! :rocket:](https://medium.com/webpack/webpack-4-beta-try-it-today-6b1d27d7d7e2)
 - [webpack 4: mode and optimization](https://medium.com/webpack/webpack-4-mode-and-optimization-5423a6bc597a)
 - [webpack 4: import() and CommonJs](https://medium.com/webpack/webpack-4-import-and-commonjs-d619d626b655)
+- [webpack 4: Code Splitting, chunk graph and the splitChunks optimization](https://medium.com/webpack/webpack-4-code-splitting-chunk-graph-and-the-splitchunks-optimization-be739a861366)
 - [webpack 4: released today!! :sparkles:](https://medium.com/webpack/webpack-4-released-today-6cdb994702d4)
+- [release notes & changelog](https://github.com/webpack/webpack/releases)
 
 ## License
 

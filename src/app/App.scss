@@ -1,0 +1,7 @@
+.container {
+    border: 1px solid green;
+
+    & > h1 {
+        text-align: center;
+    }
+}

@@ -9,5 +9,6 @@ import './index.scss';
 
 render(<App />, document.querySelector('#app'));
 
+console.info('nodeEnv', process.env.NODE_ENV);
 console.info(reformat('1123581321'));
 foo();

@@ -23,6 +23,7 @@ module.exports = {
         publicPath: '/'
     },
     optimization: {
+        runtimeChunk: 'single',
         splitChunks: {
             cacheGroups: {
                 vendors: {
@@ -35,7 +36,7 @@ module.exports = {
         }
     },
     resolve: {
-        extensions: ['.js', '.jsm']
+        extensions: ['.js', '.jsx', '.jsm']
     },
     devtool: 'eval',
     module: {

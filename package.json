@@ -4,12 +4,13 @@
   "description": "webpack 4 (legato) demo app",
   "main": "index.js",
   "scripts": {
-    "default:dev": "webpack --mode development",
-    "default:prod": "webpack --mode production",
-    "build:dev": "webpack --mode development",
-    "build": "BABEL_ENV=production webpack --mode production",
+    "default:dev": "npm run clean && webpack --mode development",
+    "default:prod": "npm run clean && webpack --mode production",
+    "build:dev": "npm run clean && webpack --mode development",
+    "build": "npm run clean && BABEL_ENV=production webpack --mode production",
     "stats": "webpack --profile --json > stats.json",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "html-webpack-template": "^6.1.0",
     "node-sass": "^4.7.2",
     "resolve-url-loader": "^2.3.0",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.2",
     "webpack": "4.1.1",

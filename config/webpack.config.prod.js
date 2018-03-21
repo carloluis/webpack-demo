@@ -83,6 +83,7 @@ module.exports = {
             title: 'Webpack 4 Demo',
             favicon: '../src/favicon.ico',
             meta: [{ name: 'robots', content: 'noindex,nofollow' }],
+            appMountIds: ['app'],
             inject: false,
             minify: {
                 collapseWhitespace: true,

@@ -1,3 +1,18 @@
 {
-	"presets": ["babel-preset-env", "react"]
+    "env": {
+        "development": {
+            "presets": ["babel-preset-env", "react"]
+        },
+        "production": {
+            "presets": ["babel-preset-env", "react"],
+            "plugins": [
+                [
+                    "transform-react-remove-prop-types",
+                    {
+                        "mode": "wrap"
+                    }
+                ]
+            ]
+        }
+    }
 }

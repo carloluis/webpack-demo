@@ -7,7 +7,7 @@
     "default:dev": "webpack --mode development",
     "default:prod": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "build": "webpack --mode production",
+    "build": "BABEL_ENV=production webpack --mode production",
     "stats": "webpack --profile --json > stats.json",
     "dev": "webpack-dev-server"
   },
@@ -30,6 +30,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.4.1",

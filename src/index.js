@@ -7,7 +7,7 @@ import foo from './demo/foo';
 import bar from './demo/bar';
 import './index.scss';
 
-render(<App />, document.querySelector('#app'));
+render(<App title="Webpack 4 Demo" />, document.querySelector('#app'));
 
 console.info('nodeEnv', process.env.NODE_ENV);
 console.info(reformat('1123581321'));

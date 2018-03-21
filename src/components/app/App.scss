@@ -1,4 +1,5 @@
 @import '~styles/palette.scss';
+@import '~styles/mixins.scss';
 
 $min-fontsize: 24px;
 $fontsize-range: 32;
@@ -6,11 +7,11 @@ $min-screensize: 420px;
 $screensize-range: 1020;
 
 .container {
-    border: 1px solid $somegray;
+    padding: 16px;
 
     & > h1 {
         text-align: center;
-        font-size: calc(#{$min-fontsize} + #{$fontsize-range} * ((100vw - #{$min-screensize}) / #{$screensize-range}));
+        @include responsive-font($min-fontsize, $fontsize-range, $min-screensize, $screensize-range);
         background: $darkblue;
         color: $somegray;
 
@@ -18,5 +19,9 @@ $screensize-range: 1020;
             background: $somegray;
             color: $darkblue;
         }
+    }
+
+    & .cards {
+        padding: 8px;
     }
 }

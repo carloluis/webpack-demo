@@ -1,0 +1,3 @@
+@mixin responsive-font($min-fontsize: 24px, $fontsize-range: 32, $min-screensize: 420px, $screensize-range: 1020) {
+    font-size: calc(#{$min-fontsize} + #{$fontsize-range} * ((100vw - #{$min-screensize}) / #{$screensize-range}));
+}

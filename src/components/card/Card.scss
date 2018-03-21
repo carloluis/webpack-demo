@@ -1,0 +1,32 @@
+@import '~styles/palette.scss';
+@import '~styles/mixins.scss';
+
+$min-fontsize: 16px;
+$fontsize-range: 24;
+$min-screensize: 420px;
+$screensize-range: 1020;
+
+.container {
+    border-radius: 4px;
+    background: $lightblue;
+    padding: 8px;
+    margin: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    & > h2 {
+        @include responsive-font($min-fontsize, $fontsize-range);
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 8px $darkblue;;
+    }
+
+    & .description {
+        padding: 8px;
+    }
+}

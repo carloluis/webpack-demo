@@ -58,6 +58,9 @@ module.exports = {
                             }
                         },
                         {
+                            loader: 'resolve-url-loader'
+                        },
+                        {
                             loader: 'sass-loader'
                         }
                     ]
@@ -67,6 +70,10 @@ module.exports = {
                 test: /.jsx?$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader'
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: 'file-loader'
             }
         ]
     },

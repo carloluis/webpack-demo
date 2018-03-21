@@ -8,6 +8,8 @@ $screensize-range: 1020;
 
 .container {
     padding: 16px;
+    max-width: 80%;
+    margin: 0 auto;
 
     & > h1 {
         text-align: center;
@@ -19,9 +21,5 @@ $screensize-range: 1020;
             background: $somegray;
             color: $darkblue;
         }
-    }
-
-    & .cards {
-        padding: 8px;
     }
 }

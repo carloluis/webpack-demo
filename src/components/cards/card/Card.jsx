@@ -12,11 +12,11 @@ class Card extends Component {
         this.setState(state => ({ more: !state.more }));
     }
     render() {
-        const { title, children } = this.props;
+        const { title, description } = this.props;
         return (
             <div className={styles.container} onClick={this.handleClick}>
                 <h2>{title}</h2>
-                {this.state.more && <div className={styles.description}>{children}</div>}
+                {this.state.more && <div className={styles.description}>{description}</div>}
             </div>
         );
     }
@@ -24,7 +24,7 @@ class Card extends Component {
 
 Card.propTypes = {
     title: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired
+    description: PropTypes.string.isRequired
 };
 
 export default Card;

@@ -1,0 +1,11 @@
+@import '~styles/palette.scss';
+
+.github {
+    background: url(../../assets/github-icon.png) no-repeat center/100%;
+    display: inline-block;
+    position: fixed;
+    top: -4px;
+    right: -4px;
+    width: 64px;
+    height: 64px;
+}

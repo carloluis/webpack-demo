@@ -12,7 +12,6 @@ $screensize-range: 1020;
     margin: 0 auto;
 
     & > h1 {
-        text-align: center;
         @include responsive-font($min-fontsize, $fontsize-range, $min-screensize, $screensize-range);
         background: $darkblue;
         color: $somegray;

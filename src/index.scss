@@ -1,5 +1,8 @@
+@import './styles/palette.scss';
+
 body {
-    background: pink;
+    background: $darkblue;
+    color: $somegray;
 }
 
 .sample-rule {

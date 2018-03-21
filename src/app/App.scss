@@ -1,13 +1,22 @@
+@import '../styles/palette.scss';
+
 $min-fontsize: 24px;
 $fontsize-range: 32;
 $min-screensize: 420px;
 $screensize-range: 1020;
 
 .container {
-    border: 1px solid green;
+    border: 1px solid $somegray;
 
     & > h1 {
         text-align: center;
         font-size: calc(#{$min-fontsize} + #{$fontsize-range} * ((100vw - #{$min-screensize}) / #{$screensize-range}));
+        background: $darkblue;
+        color: $somegray;
+
+        &::selection {
+            background: $somegray;
+            color: $darkblue;
+        }
     }
 }

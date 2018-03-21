@@ -36,6 +36,12 @@ module.exports = {
             }
         }
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.jsm'],
+        alias: {
+            styles: path.resolve(__dirname, '../src/styles')
+        }
+    },
     module: {
         rules: [
             {

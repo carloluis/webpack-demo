@@ -36,7 +36,10 @@ module.exports = {
         }
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.jsm']
+        extensions: ['.js', '.jsx', '.jsm'],
+        alias: {
+            styles: path.resolve(__dirname, '../src/styles')
+        }
     },
     devtool: 'eval',
     module: {

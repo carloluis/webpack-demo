@@ -93,6 +93,9 @@ module.exports = {
         ]),
         new ExtractTextPlugin({
             filename: '[name].[chunkhash].css'
+        }),
+        new webpack.DefinePlugin({
+            'PRODUCTION': JSON.stringify(true)
         })
     ]
 };

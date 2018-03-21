@@ -96,7 +96,10 @@ module.exports = {
                 from: path.join(PATHS.src, 'demo/static.js'),
                 to: path.join(PATHS.dist, 'static.js')
             }
-        ])
+        ]),
+        new webpack.DefinePlugin({
+            PRODUCTION: JSON.stringify(false)
+        })
     ],
     devServer: {
         contentBase: PATHS.dist,

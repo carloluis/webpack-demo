@@ -21,7 +21,7 @@ module.exports = {
     output: {
         path: PATHS.dist,
         filename: '[name].[chunkhash].js',
-        publicPath: '/'
+        publicPath: './'
     },
     optimization: {
         runtimeChunk: 'single',
@@ -93,7 +93,7 @@ module.exports = {
                 html5: true
             },
             mobile: true,
-            scripts: ['/static.js']
+            scripts: ['./static.js']
         }),
         new CopyWebpackPlugin([
             {

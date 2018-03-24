@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
@@ -46,25 +46,23 @@ module.exports = {
         rules: [
             {
                 test: /.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                modules: true,
-                                camelCase: 'dashes',
-                                minimize: true
-                            }
-                        },
-                        {
-                            loader: 'resolve-url-loader'
-                        },
-                        {
-                            loader: 'sass-loader'
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            camelCase: 'dashes',
+                            minimize: true
                         }
-                    ]
-                })
+                    },
+                    {
+                        loader: 'resolve-url-loader'
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ]
             },
             {
                 test: /.jsx?$/,
@@ -105,11 +103,11 @@ module.exports = {
                 to: path.join(PATHS.dist, 'static.js')
             }
         ]),
-        new ExtractTextPlugin({
+        new MiniCssExtractPlugin({
             filename: '[name].[chunkhash].css'
         }),
         new webpack.DefinePlugin({
-            'PRODUCTION': JSON.stringify(true)
+            PRODUCTION: JSON.stringify(true)
         })
     ]
 };

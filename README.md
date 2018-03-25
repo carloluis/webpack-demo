@@ -35,6 +35,7 @@ yarn add webpack webpack-cli --dev
 ```
 
 <details>
+<summary>More</summary>
 
 This project started with `Webpack 4` in beta version:
 
@@ -70,6 +71,8 @@ Webpack `mode` reduce the required configuration for an useful build:
 ```bash
 webpack --mode production
 ```
+
+There is also another hidden `none` mode which disables everything (available only inside the configuration object).
 
 ### Changes
 

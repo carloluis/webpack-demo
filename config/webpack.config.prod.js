@@ -77,7 +77,20 @@ module.exports = {
             template: '../node_modules/html-webpack-template/index.ejs',
             title: 'Webpack 4 Demo',
             favicon: '../src/favicon.ico',
-            meta: [{ name: 'robots', content: 'noindex,nofollow' }],
+            meta: [
+                {
+                    name: 'robots',
+                    content: 'index,follow'
+                },
+                {
+                    name: 'description',
+                    content: 'Webpack 4 demo using ES6, React, SASS'
+                },
+                {
+                    name: 'keywords',
+                    content: 'webpack,webpack-4,webpack.config.js,html5,es6+,react,sass'
+                }
+            ],
             appMountIds: ['app'],
             inject: false,
             minify: {

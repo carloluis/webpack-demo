@@ -4,8 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
-const package = require('../package.json');
-
 const PATHS = {
     src: path.join(__dirname, '../src'),
     dist: path.join(__dirname, '../dist')
@@ -15,8 +13,7 @@ module.exports = {
     context: __dirname,
     mode: 'production',
     entry: {
-        app: [PATHS.src],
-        vendors: Object.keys(package.dependencies)
+        app: [PATHS.src]
     },
     output: {
         path: PATHS.dist,

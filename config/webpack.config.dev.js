@@ -3,8 +3,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
-const package = require('../package.json');
-
 const PATHS = {
     src: path.join(__dirname, '../src'),
     dist: path.join(__dirname, '../dist')
@@ -14,8 +12,7 @@ module.exports = {
     context: __dirname,
     mode: 'development',
     entry: {
-        app: [PATHS.src],
-        vendors: Object.keys(package.dependencies)
+        app: [PATHS.src]
     },
     output: {
         path: PATHS.dist,
@@ -41,7 +38,7 @@ module.exports = {
             styles: path.resolve(__dirname, '../src/styles')
         }
     },
-    devtool: 'eval',
+    devtool: 'eval-sourcemap',
     module: {
         rules: [
             {

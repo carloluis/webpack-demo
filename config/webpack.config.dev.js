@@ -105,7 +105,10 @@ module.exports = {
             }
         ]),
         new webpack.DefinePlugin({
-            PRODUCTION: JSON.stringify(false)
+            PRODUCTION: JSON.stringify(false),
+            VERSION: JSON.stringify('1.2.0'),
+            DEBUG: true,
+            CODE_FRAGMENT: '80 + 5'
         })
     ],
     devServer: {

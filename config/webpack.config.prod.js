@@ -104,7 +104,9 @@ module.exports = {
             filename: '[name].[chunkhash].css'
         }),
         new webpack.DefinePlugin({
-            PRODUCTION: JSON.stringify(true)
+            PRODUCTION: JSON.stringify(true),
+            VERSION: JSON.stringify('1.2.0'),
+            DEBUG: false
         })
     ]
 };

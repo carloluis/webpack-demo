@@ -10,7 +10,8 @@
     "build": "npm run clean && BABEL_ENV=production webpack --mode production",
     "stats": "webpack --profile --json > stats.json",
     "dev": "webpack-dev-server",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "example:nodejs": "cd examples && npm run nodejs"
   },
   "repository": {
     "type": "git",

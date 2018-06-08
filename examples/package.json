@@ -1,0 +1,25 @@
+{
+  "name": "webpack-demo-examples",
+  "version": "1.0.0",
+  "description": "webpack 4 demo - examples",
+  "scripts": {
+    "nodejs": "webpack --config ./nodejs/webpack.config.js && node nodejs/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloluis/webpack-demo.git"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-4",
+    "webpack 4",
+    "webpack legato",
+    "demo"
+  ],
+  "author": "Carloluis Rodríguez <carloluisr@gmail.com> (https://github.com/carloluis)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloluis/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/carloluis/webpack-demo#readme"
+}

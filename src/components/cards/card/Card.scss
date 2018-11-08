@@ -9,9 +9,10 @@
     cursor: pointer;
     text-align: center;
     transition: all .4s ease-in-out;
+    min-width: 150px;
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 
     & > h2 {

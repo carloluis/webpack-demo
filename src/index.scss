@@ -1,5 +1,13 @@
 @import './styles/palette.scss';
 
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     background: $darkblue;
     color: $somegray;

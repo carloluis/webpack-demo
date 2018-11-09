@@ -49,9 +49,11 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             modules: true,
-                            camelCase: 'dashes',
-                            minimize: true
+                            camelCase: 'dashes'
                         }
+                    },
+                    {
+                        loader: 'postcss-loader'
                     },
                     {
                         loader: 'resolve-url-loader'

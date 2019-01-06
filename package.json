@@ -1,8 +1,8 @@
 {
   "name": "webpack-demo",
   "version": "1.2.0",
-  "description": "webpack 4 (legato) demo app",
-  "main": "index.js",
+  "description": "webpack 4 (legato) demo project",
+  "main": "src/index.js",
   "scripts": {
     "default:dev": "npm run clean && webpack --mode development",
     "default:prod": "npm run clean && webpack --mode production",

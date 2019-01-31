@@ -6,3 +6,7 @@ import './index.scss';
 import './demo';
 
 render(<App title="Webpack 4 Demo" />, document.querySelector('#app'));
+
+if (module.hot) {
+    module.hot.accept();
+}

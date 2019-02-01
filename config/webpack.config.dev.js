@@ -35,7 +35,8 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.jsm'],
         alias: {
-            styles: path.resolve(__dirname, '../src/styles')
+            styles: path.resolve(__dirname, '../src/styles'),
+            'react-dom': '@hot-loader/react-dom'
         }
     },
     devtool: 'eval-sourcemap',

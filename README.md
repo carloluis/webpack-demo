@@ -22,7 +22,8 @@ Check your browser console at [localhost:8080](http://localhost:8080/)
 * html creation: [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 * copying files: [copy-webpack-plugin](https://github.com/webpack-contrib/copy-webpack-plugin)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
-* sass support
+* Sass support
+* Hot Module Replacement
 
 ----
 
